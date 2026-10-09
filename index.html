@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presensi Karyawan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Presensi Karyawan</h2>
+        <p>Face Recognition System</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h3>Presensi Hari Ini</h3>
+            <p id="tanggal"></p>
+
+            <div class="jadwal">
+                <div>
+                    <span>Masuk Kerja</span>
+                    <strong>07.00</strong>
+                </div>
+
+                <div>
+                    <span>Keluar Istirahat</span>
+                    <strong>12.00</strong>
+                </div>
+
+                <div>
+                    <span>Masuk Kembali</span>
+                    <strong>14.00</strong>
+                </div>
+
+                <div>
+                    <span>Pulang Kerja</span>
+                    <strong>18.00</strong>
+                </div>
+            </div>
+
+            <button id="tombolPresensi">
+    Mulai Presensi
+</button>
+
+<div id="kameraContainer" style="display: none; margin-top: 15px;">
+    <video id="kamera" autoplay playsinline
+        style="width: 100%; border-radius: 10px;"></video>
+
+    <button id="tombolTutup" style="margin-top: 10px;">
+        Tutup Kamera
+    </button>
+</div>
+
+<p id="status"></p>
+        </section>
+
+        <section class="card">
+            <h3>Rekap Presensi</h3>
+            <p>Rekap seluruh karyawan tersedia dalam laporan Excel bulanan.</p>
+            <button id="tombolLaporan">
+                Lihat Laporan
+            </button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Presensi Karyawan</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

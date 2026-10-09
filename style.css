@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #166534;
+    color: white;
+    padding: 24px 18px;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.jadwal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.jadwal div {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 14px 10px;
+}
+
+.jadwal span,
+.jadwal strong {
+    display: block;
+}
+
+.jadwal span {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.jadwal strong {
+    font-size: 20px;
+    color: #166534;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #166534;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+#status {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 16px;
+    color: #64748b;
+    font-size: 13px;
+}
